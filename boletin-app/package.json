@@ -1,0 +1,62 @@
+{
+  "name": "boletin-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@supabase/supabase-js": "^2.50.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "formik": "^2.2.9",
+    "localforage": "^1.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-query": "^3.39.3",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1",
+    "styled-components": "^5.3.9",
+    "web-vitals": "^2.1.4",
+    "yup": "^1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:unit": "react-scripts test --testPathPattern=src/__tests__/unit",
+    "test:integration": "react-scripts test --testPathPattern=src/__tests__/integration",
+    "test:e2e": "react-scripts test --testPathPattern=src/__tests__/e2e",
+    "eject": "react-scripts eject",
+    "server": "node server/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run start\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "^7.0.2",
+    "axios-mock-adapter": "^1.22.0",
+    "concurrently": "^9.1.2",
+    "jest-fetch-mock": "^3.0.3",
+    "msw": "^2.2.3",
+    "nock": "^13.5.4"
+  }
+}
